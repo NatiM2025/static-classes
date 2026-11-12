@@ -15,13 +15,19 @@ public class NameFormatter {
     }
     public static String format (String fullname){
         String[] name = fullname.trim().split(" ");
-        if (name.length == 2){
+        if (name.length == 3){
             String firstName = name[0];
             String middleName = name[1];
             String lastName = name[2];
             return lastName + ", " + middleName + " " + firstName;
-        }else if (name.length <= 0)
-        return "Empty name";
+        }else if (name.length <= 0){
+            return "Empty name";
+        } else if (name.length == 2) {
+            String firstName = name[0];
+            String lastName = name[1];
+            return lastName + ", " + firstName;
+        }return "Invalid name format, Pleas use your full name";
+
     }
 
 }

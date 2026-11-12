@@ -8,6 +8,7 @@ public class Main {
         String result5 = NameFormatter.format("Mel Johnson");
         System.out.println(result);
         System.out.println(result4);
+        System.out.println(result5);
 
     }
 }
